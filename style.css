@@ -3,6 +3,10 @@ div {
     padding: 5px;
 }
 
+.divided {
+    display: flex;
+    justify-content: space-between;
+}
 
 a, span, h3, b {
     font-family: 'Times New Roman', serif;
@@ -59,4 +63,23 @@ body {
     .fv a {
         flex-grow: 0 !important;
     }
+}
+
+.fv {
+    margin: 10px;
+    margin-top: 20px;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.current-city div {
+    display: flex;
+    justify-content: space-between;
+}
+.current-city span {
+    font-size: 120px;
+    padding-right: 4%;
+}
+.current-city img {
+    max-width: 180px;
 }

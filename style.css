@@ -24,3 +24,39 @@ body {
     padding: 10px;
     flex-direction: column;
 }
+
+@media (min-width: 1300px) {
+    body {
+        margin: auto 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .favorites {
+        grid-template-columns: repeat(2, minmax(360px, 1fr));
+    }
+
+    button.update {
+        border: 0;
+        background-color: #c8d1d6;
+        background-image: none;
+        border-radius: 7px;
+        width: 40%;
+        height: 50px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 65%;
+    }
+
+    .fv a {
+        flex-grow: 0 !important;
+    }
+}

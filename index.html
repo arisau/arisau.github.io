@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" />
+    <title>Weather nearby</title>
 </head>
 <body>
-$END$
+<header>
+    <h1>Weather nearby</h1>
+    <button class="update-geo">
+        <a>Update geolocation</a>
+    </button>
+</header>
+<main>
+    <section>
+        <div class="current-city">
+            <h3>Saint-Petersburg</h3>
+            <div class="divided">
+                <img src="images/rainy.svg" />
+                <span>3°C</span>
+            </div>
+        </div>
+        <div class="props">
+            <ul>
+                <li>
+                    <b>Wind</b>
+                    <span>Moderate breeze, 6.0 m/s, North-northwest</span>
+                </li>
+                <li>
+                    <b>Cloudiness</b>
+                    <span>Broken clouds</span>
+                </li>
+                <li>
+                    <b>Pressure</b>
+                    <span>1013 hpa</span>
+                </li>
+                <li>
+                    <b>Humidity</b>
+                    <span>52%</span>
+                </li>
+                <li>
+                    <b>Coordinates</b>
+                    <span>[59.88, 30.42]</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
 </body>
 </html>

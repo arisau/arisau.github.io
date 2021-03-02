@@ -1,0 +1,17 @@
+
+div {
+    padding: 5px;
+}
+h3 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+header {
+    width: 100%;
+    align-items: center;
+}
+body {
+    padding: 10px;
+    flex-direction: column;
+}

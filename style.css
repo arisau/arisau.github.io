@@ -2,11 +2,20 @@
 div {
     padding: 5px;
 }
+
+
+a, span, h3, b {
+    font-family: 'Times New Roman', serif;
+    font-size: 21px;
+    color: #708187;
+}
 h3 {
-    font-size: 60px;
+    font-family: 'Times New Roman', serif;
+    font-size: 59px;
     font-weight: normal;
     margin: 20px 0;
 }
+
 header {
     width: 100%;
     align-items: center;

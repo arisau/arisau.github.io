@@ -3,6 +3,16 @@ div {
     padding: 5px;
 }
 
+header button {
+    background-image: url(images/refresh.png);
+    border: 0;
+    background-size: cover;
+    background-color: inherit;
+    width: 90px;
+    height: 90px;
+}
+
+
 .divided {
     display: flex;
     justify-content: space-between;
@@ -78,10 +88,14 @@ body {
 }
 .current-city span {
     font-size: 120px;
-    padding-right: 4%;
+    padding-right: 40%;
 }
 .current-city img {
     max-width: 180px;
+}
+
+section .current-city {
+    flex: 1;
 }
 
 ul {

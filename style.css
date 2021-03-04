@@ -1,3 +1,16 @@
+ul {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+li {
+    display: flex;
+    background-color: #b0b6b8;
+    margin: 8px;
+    justify-content: space-between;
+    padding: 2% 4%;
+    color: #c8d1d6;
+}
 
 .fv input {
     background-color: #f1f1f1;
@@ -25,10 +38,10 @@
 .fvheader span {
     font-size: 45px;
 }
-.props span, .props b {
+.data span, .data b {
     color: white;
 }
-.props b {
+.data b {
     letter-spacing: 0.03em;
     margin-right: 10px;
 }
@@ -69,18 +82,20 @@ button.update * {
 
 a, span, h3, b {
     font-family: 'Times New Roman', serif;
-    font-size: 21px;
+    font-size: 19px;
     color: #708187;
 }
+
 h3 {
     font-family: 'Times New Roman', serif;
     font-size: 59px;
     font-weight: normal;
     margin: 20px 0;
+
 }
 h1, h2 {
     font-family: 'Times New Roman', serif;
-    font-size: 60px;
+    font-size: 54px;
     order: -3;
     color: #708187;
     font-weight: normal;
@@ -152,7 +167,7 @@ body {
     justify-content: space-between;
 }
 .current-city span {
-    font-size: 120px;
+    font-size: 80px;
     padding-right: 40%;
 }
 .current-city img {
@@ -163,18 +178,7 @@ section .current-city {
     flex: 1;
 }
 
-ul {
-    margin: 0 0;
-    padding: 0 0;
-}
 
-li {
-    display: flex;
-    background-color: #b0b6b8;
-    margin: 5px;
-    justify-content: space-between;
-    padding: 1% 2%;
-}
 
 .favorites {
     display: grid;

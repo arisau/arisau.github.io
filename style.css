@@ -12,6 +12,10 @@ header button {
     height: 90px;
 }
 
+button.update * {
+    display: none;
+}
+
 
 .divided {
     display: flex;

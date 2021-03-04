@@ -78,11 +78,26 @@ h3 {
     font-weight: normal;
     margin: 20px 0;
 }
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 60px;
+    order: -3;
+    color: #708187;
+    font-weight: normal;
+    margin-right: 10px;
+}
 
 header {
     width: 100%;
     align-items: center;
 }
+header {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     padding: 10px;
     flex-direction: column;
@@ -100,13 +115,14 @@ body {
         grid-template-columns: repeat(2, minmax(360px, 1fr));
     }
 
-    button.update {
+    button.update-geo {
         border: 0;
         background-color: #c8d1d6;
         background-image: none;
         border-radius: 7px;
         width: 40%;
         height: 50px;
+        align-items: flex-end;
     }
 
     section {
@@ -158,4 +174,11 @@ li {
     margin: 5px;
     justify-content: space-between;
     padding: 1% 2%;
+}
+
+.favorites {
+    display: grid;
+}
+.favorite {
+    flex: 1 1 640px;
 }

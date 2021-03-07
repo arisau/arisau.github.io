@@ -3,12 +3,14 @@ ul {
     padding: 0 0;
 }
 
+
+
 li {
     display: flex;
     background-color: #b0b6b8;
-    margin: 8px;
+    margin: 5px;
     justify-content: space-between;
-    padding: 2% 4%;
+    padding: 1% 2%;
     color: #c8d1d6;
 }
 
@@ -18,7 +20,7 @@ li {
     flex-grow: 1;
     padding: 8% 8%;
 }
-.fv a {
+.fv span {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,7 +45,8 @@ li {
 }
 .data b {
     letter-spacing: 0.03em;
-    margin-right: 10px;
+    margin-right: 150px;
+    text-align: right;
 }
 
 div {
@@ -57,6 +60,83 @@ header button {
     background-color: inherit;
     width: 90px;
     height: 90px;
+
+}
+
+
+
+
+.divided {
+    display: flex;
+    justify-content: space-between;
+}
+
+a, span, h3, b {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    color: #708187;
+}
+
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 60px;
+    font-weight: normal;
+    margin: 20px 0;
+
+}
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 54px;
+    order: -3;
+    color: #708187;
+    font-weight: normal;
+    margin-right: 10px;
+}
+header {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.fv {
+    margin: 10px;
+    margin-top: 20px;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.current-city>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-city img {
+    max-width: 180px;
+}
+
+section .current-city {
+    flex: 1;
+}
+
+
+
+.favorites {
+    display: grid;
+}
+.favorite {
+    flex: 1 1 640px;
 }
 
 button.btn {
@@ -74,54 +154,60 @@ button.update * {
     display: none;
 }
 
-
-.divided {
-    display: flex;
-    justify-content: space-between;
+button.update {
+     margin-right: 20px;
 }
 
-a, span, h3, b {
-    font-family: 'Times New Roman', serif;
-    font-size: 19px;
-    color: #708187;
-}
-
-h3 {
-    font-family: 'Times New Roman', serif;
-    font-size: 59px;
-    font-weight: normal;
-    margin: 20px 0;
-
-}
-h1, h2 {
-    font-family: 'Times New Roman', serif;
-    font-size: 54px;
-    order: -3;
-    color: #708187;
-    font-weight: normal;
-    margin-right: 10px;
-}
-
-header {
-    width: 100%;
-    align-items: center;
-}
-header {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-body {
-    padding: 10px;
-    flex-direction: column;
-}
-
-@media (min-width: 1300px) {
-    body {
-        margin: auto 15%;
+@media (max-width: 320px) {
+    .current-city span {
+        font-size: 40px;
+        padding-left: 20%;
+        color: #7e7e7e;
     }
+    .current-city img {
+        max-width: 30px;
+    }
+    h3 {
+        font-family: 'Times New Roman', serif;
+        font-size: 30px;
+        font-weight: normal;
+        margin: 20px 0;
+
+    }
+    a, span, h3, b {
+        font-family: 'Times New Roman', serif;
+        font-size: 10px;
+        color: #708187;
+    }
+
+    h1, h2 {
+        font-family: 'Times New Roman', serif;
+        font-size: 24px;
+        order: -3;
+        color: #708187;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+    .fvheader span {
+        font-size: 20px;
+    }
+    button.btn {
+        background-image: url(images/add.svg);
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+    }
+    header button {
+        background-image: url(images/refresh.png);
+        border: 0;
+        background-size: cover;
+        background-color: inherit;
+        width: 40px;
+        height: 40px;
+
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -130,16 +216,17 @@ body {
         grid-template-columns: repeat(2, minmax(360px, 1fr));
     }
 
-    button.update-geo {
+    button.update {
         border: 0;
         background-color: #c8d1d6;
         background-image: none;
         border-radius: 7px;
         width: 40%;
         height: 50px;
-        align-items: flex-end;
     }
-
+    button.update * {
+        display: initial !important;
+    }
     section {
         display: flex;
         justify-content: center;
@@ -150,39 +237,7 @@ body {
         width: 65%;
     }
 
-    .fv a {
+    .fv span {
         flex-grow: 0 !important;
     }
-}
-
-.fv {
-    margin: 10px;
-    margin-top: 20px;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-
-.current-city div {
-    display: flex;
-    justify-content: space-between;
-}
-.current-city span {
-    font-size: 80px;
-    padding-right: 40%;
-}
-.current-city img {
-    max-width: 180px;
-}
-
-section .current-city {
-    flex: 1;
-}
-
-
-
-.favorites {
-    display: grid;
-}
-.favorite {
-    flex: 1 1 640px;
 }

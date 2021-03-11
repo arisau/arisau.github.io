@@ -157,7 +157,11 @@ button.update * {
 button.update {
      margin-right: 20px;
 }
-
+.current-city span {
+    font-size: 80px;
+    padding-right: 40%;
+    color: #7e7e7e;
+}
 @media (max-width: 320px) {
     .current-city span {
         font-size: 40px;

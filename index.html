@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" />
     <title>Weather nearby</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
@@ -24,23 +26,23 @@
         <div class="data">
             <ul>
                 <li>
-                    <b>Wind</b>
+                    <span class="b">Wind</span>
                     <span>Moderate breeze, 6.0 m/s</span>
                 </li>
                 <li>
-                    <b>Cloudiness</b>
+                    <span class="b">Cloudiness</span>
                     <span>Broken clouds</span>
                 </li>
                 <li>
-                    <b>Pressure</b>
+                    <span class="b">Pressure</span>
                     <span>1013 hpa</span>
                 </li>
                 <li>
-                    <b>Humidity</b>
+                    <span class="b">Humidity</span>
                     <span>52%</span>
                 </li>
                 <li>
-                    <b>Coordinates</b>
+                    <span class="b">Coordinates</span>
                     <span>[59.88, 30.42]</span>
                 </li>
             </ul>
@@ -48,16 +50,16 @@
     </section>
     <div class="fv divided">
         <h2>Favourites</h2>
-        <span>
-            <input type="text" placeholder="Add new city" />
-            <button name="add" class="btn"></button>
-        </span>
+        <form action="" class="add-city-form" method="POST">
+            <input type="text" name="add-city" placeholder="Add new city">
+            <input type="submit" name="add" class="btn" value="+">
+        </form>
     </div>
     </div>
-    <section class="favorites">
-        <div class="favorite">
+    <ul class="favorites">
+        <li class="favorite">
             <div class="fvheader">
-                <span>Moscow</span>
+                <h3>Moscow</h3>
                 <img src="images/cloudy.svg" />
                 <span>10°C</span>
                 <button class="btn"></button>
@@ -86,10 +88,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="favorite">
+        </li>
+        <li class="favorite">
             <div class="fvheader">
-                <span>Helsinki</span>
+                <h3>Helsinki</h3>
                 <img src="images/cloudy.svg" />
                 <span>3°C</span>
                 <button class="btn"></button>
@@ -118,10 +120,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="favorite">
+        </li>
+        <li class="favorite">
             <div class="fvheader">
-                <span>Moscow</span>
+                <h3>Moscow</h3>
                 <img src="images/cloudy.svg" />
                 <span>10°C</span>
                 <button class="btn"></button>
@@ -150,8 +152,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </li>
+    </ul>
 </main>
 </body>
 </html>
